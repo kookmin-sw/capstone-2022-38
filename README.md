@@ -51,4 +51,3 @@ ID:****3530
 Email: lyy990829@kookmin.ac.kr
 Role: front-end developer, Market reasercher
 ```
->>>>>>> 47b3d883c3fcc095728b79c429df2d1be61cc4c8
