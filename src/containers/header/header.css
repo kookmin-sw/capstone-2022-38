@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 50px;
+	overflow: hidden;
+	
+}
+.container
+{
+	position: relative;
+	width: calc(100% - 100px);
+	min-height: calc(100vh - 280px);
+	background: rgba(255,255,255,0.5);
+	border-radius: 20px;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+	display: flex;
+
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	justify-content: space-between;
+	align-items: center;
+    padding: 50px;
+}
+
+
+header
+{
+	position: absolute;
+	top: -40px;
+	right: 20px;
+	left: 20px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
+
+	border: 1px solid rgba(255,255,255,0.25);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.2);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+header .logo
+{
+	color: #8a2435;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+}
+header ul
+{
+	display: flex;
+}
+header ul li
+{
+	list-style: none;
+	margin: 0 10px;
+}
+header ul li a
+{
+	list-style: none;
+	text-decoration: none;
+	font-weight: 500;
+	color: #b36298;
+	padding: 8px 15px;
+	border-radius: 25px;
+}
+header ul li a.active,
+header ul li a:hover
+{
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container .content
+{
+	
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	text-align: center;
+
+}
+.container .content h2
+{
+	flex-direction: row;
+	font-size: 5em;
+	font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+	display: block;
+	cursor: default;
+	text-align: center;
+	
+}
+
+
+
+.container .imgBx img
+{
+	max-width: 400px;
+	animation: animate 5s linear infinite;
+	
+}
+
+
+.searchBox {
+	display: flex;
+	padding: 15px 30px;
+	background: #fff;
+	color: #8a2435;
+	margin-top: 20px;
+	border-radius: 30px;
+	font-size: 1.2em;
+	font-weight: 500;
+	text-decoration: none;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+	
+}
+
+.searchBox button {
+	background:none;
+	border:none;
+}
+
+
+
+
+
+
+
+.react-select-container
+{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.react-select-container::-webkit-scrollbar {width: 6px;}
+.react-select-container::-webkit-scrollbar-track {background: transparent; }
+.react-select-container::-webkit-scrollbar-thumb {background: #303030; border-radius: 20px;}
+.react-select-container::-webkit-scrollbar-thumb:hover {background: #303030;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animate
+{
+	0%,100%
+	{
+		transform: translateY(50px);
+	}
+	50%
+	{
+		transform: translateY(100px);
+	}
+}
+

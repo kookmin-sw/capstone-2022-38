@@ -1,0 +1,48 @@
+/*
+* Map - Style
+*/
+
+.centered {
+    /* position: fixed; 
+    top: 50%;
+    left: 10%; */
+    transform: translate(-10%, -2%);
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  .svg-map {
+  /* 
+    width:"524.237";
+    height:"630.587"; */
+    /* width: auto;
+    height: 98vh;
+    stroke: #4e211c;
+    stroke-width: 1.5; */
+    width: 68vh;
+    height: 68vh;
+    stroke: #4e211c;
+    stroke-width: 1.5;
+  }
+  .svg-map__location {
+    cursor: pointer;
+    shape-rendering: crispEdges;
+    /* fill: transparent; */
+  }
+  .svg-map__location:focus, .svg-map__location:hover {
+    fill: #ffc005;
+    outline: 0; }
+  .svg-map__location[aria-checked=true] {
+    fill: #188052 }
+  
+    svg path {
+      fill:#7a7a7a;
+      stroke:#ebebeb;
+      stroke-width:0.7;
+    }
+    
+    svg path:hover {
+    fill:#295ad6;
+    cursor:pointer;
+    transition:0.5s;
+    }
