@@ -1,0 +1,101 @@
+
+[
+    {
+      "Name": "Lotte World",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Travel_southkorea_lotte.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Travel_southkorea_lotte.jpg",
+      "Location": "Seoul",
+      "Area": "49,075.26 acres (198.6 km2)",
+      "Recreation visitors": "3,537,575",
+      "Description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats."
+    },
+    {
+      "Name": "American Samoa",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Ofu_Beach_NPS.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ofu_Beach_NPS.jpg/200px-Ofu_Beach_NPS.jpg",
+      "Location": "seoul",
+      "Established": "October 31, 1988",
+      "Area": "8,256.67 acres (33.4 km2)",
+      "Recreation visitors": "28,626",
+      "Description": "The southernmost national park is on three Samoan islands and protects coral reefs, rainforests, volcanic mountains, and white beaches. The area is also home to flying foxes, brown boobies, sea turtles, and 900 species of fish."
+    },
+    {
+      "Name": "Arches",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Delicatearch1.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Delicatearch1.jpg/200px-Delicatearch1.jpg",
+      "Location": "Seoul",
+      "Established": "November 12, 1971",
+      "Area": "76,678.98 acres (310.3 km2)",
+      "Recreation visitors": "1,663,557",
+      "Description": "This site features more than 2,000 natural sandstone arches, with some of the most popular arches in the park being Delicate Arch, Landscape Arch and Double Arch. Millions of years of erosion have created these structures located in a desert climate where the arid ground has life-sustaining biological soil crusts and potholes that serve as natural water-collecting basins. Other geologic formations include stone pinnacles, fins, and balancing rocks."
+    },
+    {
+      "Name": "National Museum of Korea",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/BadlandsView3.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BadlandsView3.jpg/200px-BadlandsView3.jpg",
+      "Location": "Seoul",
+      "Established": "November 10, 1978",
+      "Area": "242,755.94 acres (982.4 km2)",
+      "Recreation visitors": "1,008,942",
+      "Description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+    },
+
+    {
+      "Name": "Namsan",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Namsan.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Namsan.jpg",
+      "Location": "Seoul",
+      "Established": "November 10, 1978",
+      "Area": "242,755.94 acres (982.4 km2)",
+      "Recreation visitors": "1,008,942",
+      "Description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+    },
+    {
+      "Name": "Lotte World",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Travel_southkorea_lotte.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Travel_southkorea_lotte.jpg",
+      "Location": "Seoul",
+      "Established": "November 10, 1978",
+      "Area": "242,755.94 acres (982.4 km2)",
+      "Recreation visitors": "1,008,942",
+      "Description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+    },
+    {
+      "Name": "Badlands",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/BadlandsView3.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BadlandsView3.jpg/200px-BadlandsView3.jpg",
+      "Location": "Seoul",
+      "Established": "November 10, 1978",
+      "Area": "242,755.94 acres (982.4 km2)",
+      "Recreation visitors": "1,008,942",
+      "Description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+    },
+    {
+      "Name": "Badlands",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/BadlandsView3.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BadlandsView3.jpg/200px-BadlandsView3.jpg",
+      "Location": "Seoul",
+      "Established": "November 10, 1978",
+      "Area": "242,755.94 acres (982.4 km2)",
+      "Recreation visitors": "1,008,942",
+      "Description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+    },
+    {
+      "Name": "Badlands",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/BadlandsView3.jpg",
+      "Thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BadlandsView3.jpg/200px-BadlandsView3.jpg",
+      "Location": "Seoul",
+      "Established": "November 10, 1978",
+      "Area": "242,755.94 acres (982.4 km2)",
+      "Recreation visitors": "1,008,942",
+      "Description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+    }
+   
+   
+   
+  ]
+
+
+
+
+  
