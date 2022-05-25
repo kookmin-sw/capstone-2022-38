@@ -5,8 +5,6 @@
 
 
 .both-wrapper {
-    /* display: flex;
-    flex-direction: row;  */
   display: flex;
   flex-direction: row;
   position: relative;
@@ -28,16 +26,11 @@
     justify-content: center;
     width: 50%; 
     
-    /*display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-    grid-row-gap:0.2rem;*/
+   
 }
 
 .content-wrapper {
-    /* display: flex;
-    flex-direction: row;
-    position:relative; */
+   
     display: inline-block;
     width: 50%;
 }
@@ -48,14 +41,7 @@
     flex-direction: row;  */
 
     
-    /* 
-    display:flex;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    border-radius:25px;
-    margin: 0 0 0 40px;
-    padding:30px; */
+  
 }
 
 /*

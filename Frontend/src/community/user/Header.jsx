@@ -69,7 +69,6 @@ const ProfileHeader = (props) => {
 
 
     return (
-        
         <div className="d-flex justify-content-start align-items-center">
         <img className="img-fluid" 
         src={props.avatar ? props.avatar : UserLogo} 
@@ -78,7 +77,7 @@ const ProfileHeader = (props) => {
         <span style={{fontFamily:"var(--font-family"}}>{props.username}</span>
         { 
         isProfilePage === '/profile' ? 
-        <button className="btn__primary ms-2" 
+        <button className="btn__primary ms-2 edit-profile" 
         style={{padding:"0.2em 0.3em"}}  
         data-bs-toggle="modal" 
         data-bs-target="#exampleModal"> Edit Profile </button> 

@@ -43,6 +43,7 @@ const UserDetail = () => {
         <MainContainer>
         <Navbar/>
         <div className="home_container" id="main__container">
+            
         <div className="row">
         {loading ? <Loader/> :
         <div className="col-md-4 mx-auto">

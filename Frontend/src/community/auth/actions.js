@@ -2,7 +2,7 @@
 const ROOT_URL = 'https://reachaliens-test.herokuapp.com/api'
 
 
-// const ROOT_URL = 'https://reachaliens-test.herokuapp.com'
+
 
 export const loginUser = async (loginPayload) => {
     try {

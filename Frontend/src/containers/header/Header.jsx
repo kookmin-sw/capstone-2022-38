@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <div>
       <section>
-        <div className="container">
+        <div className="mainpage_container">
           <header>
             <a href="#" className="logo">
               Logo

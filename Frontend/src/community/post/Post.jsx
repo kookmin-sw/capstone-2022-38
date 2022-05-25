@@ -3,9 +3,6 @@ import UserLogo from '../../assets/user.png';
 import {Link} from 'react-router-dom';
 import {UserContext} from '../../context/UserContext';
 
-
-
-
 const Post = (props) => {
     let {user} = useContext(UserContext); // authenticated user
     
@@ -32,7 +29,6 @@ const Post = (props) => {
     }
 
     return (
-       
         <div className={deleted ? "post__card deleted" : "post__card"  }>
         <div className="post__header">
         <img src={props.avatar ? props.avatar : UserLogo} alt="" style={{height:"2em",width:"2em",borderRadius:"50%"}} />
@@ -46,7 +42,12 @@ const Post = (props) => {
                 {user.data.user.id == props.userId ?
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><Link className="dropdown-item" to={"/post/edit/"+props.id}>Edit</Link></li>
-                <li><Link className="dropdown-item" to={"/post/edit/"+props.id}>Remove</Link></li>
+                {/* show delete btn if showDeleteBtn is true and call deletePost when clickd */}
+                { 
+                <button onClick={deletePost} className="dropdown-item">
+                Remove
+                </button>
+                }
                 </ul> :
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><Link className="dropdown-item" to="/report">Report</Link></li>
@@ -56,6 +57,7 @@ const Post = (props) => {
         </ul>
         </div>
 
+                
         <div className="post__body">
         <p>{props.caption}</p>
         
@@ -63,38 +65,20 @@ const Post = (props) => {
         
         </div>      
 
+                
         <div className="post__action">
         <span onClick={likePost}>
         <i 
         className={liked ? "fas fa-heart text-primary" : "far fa-heart text-primary"} />  {totalLikes} 
         </span>
 
-
-        
-
         <Link to={"/post/"+props.id} className="ms-4"> 
         <i className="far fa-comment text-success" />
         </Link> 
-        {/* show edit btn if showEditBtn is true*/}
-        
-        { 
-            props.showEditBtn &&
-            <Link to={"/post/edit/"+props.id}  className="ms-4">
-            <i className="far fa-edit text-warning" /> 
-            </Link>
-        }
-
-        {/* show delete btn if showDeleteBtn is true and call deletePost when clickd */}
-        { 
-        <span onClick={deletePost} className="ms-4">
-        <i className="far fa-trash-alt text-danger" />
-        </span>
-        }
 
         </div>
 
         </div>
-        
     )
 }
 

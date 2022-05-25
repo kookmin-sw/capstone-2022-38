@@ -1,6 +1,5 @@
 import React from 'react';
-import SKMap from '../../components/krmap/KRMap';
-import AttSlider from './slider';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +10,7 @@ import USAMap from "./map.js";
 import DisplayItems from "./displayTable";
 
 
-import INDEX from './index';
+
 
 // const Destination = () => (
 

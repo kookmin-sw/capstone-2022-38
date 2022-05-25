@@ -15,6 +15,11 @@ import bank from '../../assets/bank.png';
 import accomodation from '../../assets/accomodation.png';
 import korean from '../../assets/korean.png';
 import web from '../../assets/web.png'
+import tax from '../../assets/document.png'
+import transportation from '../../assets/vehicles.png';
+import healthcare from '../../assets/healthcare.png';
+import travel from '../../assets/sejong-the-great.png';
+
 
 const DocSlider = () => {
   const settings = {
@@ -50,7 +55,7 @@ const DocSlider = () => {
                         <img src={passport} alt="blog-image"/>
                         </div>
 
-                    <a href="https://www.mofa.go.kr/eng/wpge/m_5708/contents.do"><div className="back3 small-glass">Download</div></a>
+                    <a href="https://drive.google.com/file/d/1-lRa0x6CzJimZuj8YSqw0M7j94yWacvN/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
                 </div>
                 
                 
@@ -61,7 +66,7 @@ const DocSlider = () => {
                         <img src={bank} alt="blog-image"/>
                         </div>
 
-                    <a href="https://www.mofa.go.kr/eng/wpge/m_5708/contents.do"><div className="back3 small-glass">Download</div></a>
+                    <a href="https://drive.google.com/file/d/1txLxJvJR5hp7mppGPs-zQVtcUhn6seem/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
                 </div>
                 
                 
@@ -74,7 +79,7 @@ const DocSlider = () => {
 
 
                         
-                <a href="https://www.mofa.go.kr/eng/wpge/m_5708/contents.do"><div className="back3 small-glass">Download</div></a>
+                <a href="https://drive.google.com/file/d/1kt3FXu2y1WrIscpKRYzsSpGkKtJWfeHA/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
                 </div>
                 
                 
@@ -123,7 +128,52 @@ const DocSlider = () => {
                         <img src={compliant} alt="blog-image"/>
                         </div>
 
-                <a href="#"><div className="back3 small-glass">Download</div></a>
+                <a href="https://korea.assembly.go.kr:447/res/low_03_list.jsp?boardid=1000000037"><div className="back3 small-glass">Download</div></a>
+                </div>
+
+
+                <div class="port_out small-glass">
+                <h3 className="subtopic small-glass">Tax</h3>
+                    
+                <div className="doc-image">
+                        <img src={tax} alt="blog-image"/>
+                        </div>
+
+                <a href="https://www.nts.go.kr/upload/english/sub/2020%20Year-End%20Tax%20Settlement%20Manual%20for%20Foreigners_English.pdf"><div className="back3 small-glass">Download</div></a>
+                </div>
+
+
+                <div class="port_out small-glass">
+                <h3 className="subtopic small-glass">Transportation</h3>
+                    
+                <div className="doc-image">
+                        <img src={transportation} alt="blog-image"/>
+                        </div>
+
+                <a href="https://drive.google.com/file/d/12JDzbyDwNcTaejYtyijI1cLPODc_cXIj/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+                </div>
+
+
+
+                <div class="port_out small-glass">
+                <h3 className="subtopic small-glass">Healthcare</h3>
+                    
+                <div className="doc-image">
+                        <img src={healthcare} alt="blog-image"/>
+                        </div>
+
+                <a href="https://drive.google.com/file/d/1Xq0hWldyMqoMU_puNkcZnCE61vJu-YuY/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+                </div>
+
+
+                <div class="port_out small-glass">
+                <h3 className="subtopic small-glass">Travel</h3>
+                    
+                <div className="doc-image">
+                        <img src={travel} alt="blog-image"/>
+                        </div>
+
+                <a href="https://drive.google.com/file/d/1ZQtL4E1sHmRSR1A7lbQsYlmshfWu7A2q/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
                 </div>
 
            

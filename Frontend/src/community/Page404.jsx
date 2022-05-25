@@ -4,6 +4,7 @@ import Image404 from '../assets/404.svg';
 
 const Page404 = () => {
     return (
+        <div className="community_body">
         <section>
         <Navbar/>
         <div className="container" id="main__container">
@@ -15,6 +16,7 @@ const Page404 = () => {
         </div>
         </div>
         </section>
+        </div>
     )
 
 }

@@ -19,7 +19,7 @@ const Card = ({ item }) => {
         <Slider {...settings}>
           {item.map((Val) => {
             return (
-              <div className="restcont" key={Val.id}>
+              <div className="card-container " key={Val.id}>
                 <div className="restaurant-image">
                   <img src={Val.img} alt={Val.title}/>
                 </div>

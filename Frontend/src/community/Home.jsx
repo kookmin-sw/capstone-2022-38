@@ -1,36 +1,103 @@
-import React,{useContext} from 'react';
+import React,{useContext, useEffect, useState} from 'react';
 import Navbar from './Navbar';
 import CreatePost from './post/Create';
-import PostList from './post/List';
 import {UserContext} from '../context/UserContext'
 import styled from "styled-components";
 import { MainContainer } from './CustomStyle';
+import Post from './post/Post';
+import {getPosts,likePost} from './post/actions';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import Loader from './Loader';
+import {deletePost} from './post/actions'
 
 
 const Home = () => {
     const {user} = useContext(UserContext);
     let avatar = user.data.user.avatar;
+
+    const [posts,setPosts] = useState([]);
+    const [loading,setLoading] = useState(false);
+    const [nextPage,setNextPage] = useState('');
+
+    useEffect(() =>{
+        // fetch post
+        const fetchData = async () =>{
+            setLoading(true);
+            let response = await getPosts();
+        if(response) {
+            setNextPage(response.next)
+            setPosts(response.results);
+            setLoading(false)
+        }
+        }
+    fetchData()},[])
+
+    // fetch next page for infinite scroll  set the next url and start fetch
+    const fetchNextPage = async () => {
+        let response = await getPosts(nextPage);
+        if(response) {
+            setNextPage(response.next)
+            setPosts(posts.concat(response.results))// add previous post + new fetch post
+        }
+    }
+
+    // like the specific post
+    // on click of like btn handleLike props is called and it will call this function
+    const postLike = async (postId) => {
+        await likePost(postId);
+    }
+
+    const Delete = async (postId) =>{
+      let data = await deletePost(postId)
+      if(data) {
+          // remove the deleted post and set filtered posts as setPosts
+          let filteredPosts = posts.filter((post)=>post.id !== parseInt(postId))
+          setTimeout(() => {
+              setPosts([...filteredPosts])
+          }, 1000);
+      }
+  }
+    
     return(
       <div className="community_body">
-        
-        
         <MainContainer>
-          
-        
         <Navbar />
-        
-        <div className="home_container" id="main__container">
-        
+        <div className="container" id="scrollableDiv">
             <div className="col-md-8 mx-auto">
-            
             <CreatePost avatar={avatar} />
+            <div className="postlist">
+
+            { loading ? <Loader/> : 
             
-            <PostList/>
+            <InfiniteScroll 
+            dataLength={posts.length} 
+            next={fetchNextPage} 
+            hasMore={nextPage?true:false} 
+            loader={<Loader/>}
+            scrollableTarget="scrollableDiv">
             
-        </div>
+            {posts.map((post)=>{
+                return <Post key={post.id} 
+                id={post.id} 
+                caption={post.body} 
+                image={post.image} 
+                total_likes={post.total_likes} 
+                userId={post.author_detail.id} 
+                username={post.author_detail.username} 
+                avatar={post.author_detail.avatar} 
+                handleLike={()=>postLike(post.id)}
+                showDeleteBtn={true}
+                handleDelete={()=>Delete(post.id)}
+                showEditBtn={true}
+                />
+            })}
+
+            </InfiniteScroll>}
+
+            </div>
+            </div>
         </div>
         </MainContainer>
-        
         </div>
     )
 

@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
     <nav className="navbar navbar-expand-lg navbar-light" style={{}}>
-    <div className="home_container">
+    <div className="container">
     <Link className="navbar-brand text-primary" to="/home">
     <img src={Logo} alt="logo" style={{height:"2em",width:"2em"}} />
     </Link>

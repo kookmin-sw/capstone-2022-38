@@ -40,6 +40,7 @@ const PostDetail = () => {
     }
 
     return (
+        <div className="community_body">
         <MainContainer>
         <Navbar/>
         <div className="container" style={{marginTop:"1em"}}>
@@ -96,6 +97,7 @@ const PostDetail = () => {
         </div>
         </div>
         </MainContainer>
+        </div>
     );
 }
 

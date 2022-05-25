@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Navbar from '../Navbar';
 import Loader from '../Loader';
 import {getEditingPost,editPost} from './actions';
-import {useParams} from 'react-router-dom'
+import {useParams, useNavigate} from 'react-router-dom'
 import {useFormik} from 'formik'
 import { MainContainer } from '../CustomStyle';
 
@@ -11,6 +11,7 @@ import { MainContainer } from '../CustomStyle';
 const EditPost = () => {
     // get post id from url
     let {postId} = useParams();
+    let navigate = useNavigate();
 
     const [post,setPost] = useState({}); // post state
     const [loading,setLoading] = useState(false); //loading state
@@ -49,7 +50,7 @@ const EditPost = () => {
             // if response then it is edited successfully
             if(response) {
                 setUpdating(false);
-                alert("Updated Successfuly.");
+                navigate(`/`);
             } else {
                 alert("Error occoured. Try Again.");
             }
@@ -60,7 +61,7 @@ const EditPost = () => {
         <div className="community_body">
         <MainContainer>
         <Navbar/>
-        <div className="home_container" id="main__container">
+        <div className="container" id="main__container">
         <div className="row">
         <div className="col-md-5 mx-auto">
         {/* if loading show loading component 
@@ -71,7 +72,7 @@ const EditPost = () => {
             loading ? <Loader/> :
             <div>
             {post === 404 ? <h5>No post found</h5> :
-            <form className="card p-3" onSubmit={formik.handleSubmit}>
+            <form className="edit-box p-3" onSubmit={formik.handleSubmit}>
             <h5>Edit Post {post.caption} </h5>
             <div className="form-group">
             <label>Caption</label>

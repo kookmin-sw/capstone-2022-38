@@ -42,7 +42,7 @@ const Profile = () => {
         <div className="community_body">
         <MainContainer>
           <Navbar/>
-          <div className="home_container" id="main__container">
+          <div className="container" id="main__container">
             <div className="row">
               <div className="col-md-7 mx-auto">
               <ProfileHeader username={user.username} 

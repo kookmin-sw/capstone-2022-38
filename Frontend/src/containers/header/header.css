@@ -19,7 +19,7 @@ section
 	overflow: hidden;
 	
 }
-.container
+.mainpage_container
 {
 	position: relative;
 	width: calc(100% - 100px);
@@ -35,7 +35,7 @@ section
 	justify-content: space-between;
 	align-items: center;
     padding: 50px;
-}
+} 
 
 
 header
@@ -88,7 +88,7 @@ header ul li a:hover
 	background: #fff;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-.container .content
+.mainpage_container .content
 {
 	
 	
@@ -99,7 +99,7 @@ header ul li a:hover
 	text-align: center;
 
 }
-.container .content h2
+.mainpage_container .content h2
 {
 	flex-direction: row;
 	font-size: 5em;
@@ -115,7 +115,7 @@ header ul li a:hover
 
 
 
-.container .imgBx img
+.mainpage_container .imgBx img
 {
 	max-width: 400px;
 	animation: animate 5s linear infinite;
