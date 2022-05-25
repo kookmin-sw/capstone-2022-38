@@ -7,6 +7,7 @@ import Home from './community/Home';
 import PostDetail from './community/post/Detail';
 import Page404 from './community/Page404';
 import Profile from './community/user/Profile';
+
 import UserDetail from './community/user/UserDetail';
 import Signup from './community/auth/Signup';
 import Login from './community/auth/Login';
@@ -14,6 +15,7 @@ import Logout from './community/auth/Logout';
 import Search from './community/post/Search';
 import EditPost from './community/post/Edit';
 import ProtectedRoute from './community/Route';
+
 
 import {UserProvider} from './context/UserContext'
 

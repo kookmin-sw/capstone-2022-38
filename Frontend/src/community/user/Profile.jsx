@@ -44,7 +44,7 @@ const Profile = () => {
           <Navbar/>
           <div className="container" id="main__container">
             <div className="row">
-              <div className="col-md-7 mx-auto">
+              <div className="col-md-8 mx-auto">
               <ProfileHeader username={user.username} 
               email={user.email}
               avatar={user.avatar} 
@@ -55,12 +55,21 @@ const Profile = () => {
             </div>
             <div className="row">
                 {loading ? <Loader/> : 
-                <div className="col-md-7 mx-auto">
+                <div className="col-md-8 mx-auto">
                 {/* show the create post if no posts */}
                 {posts.length < 1 && <div className="mt-3"><CreatePost/></div>}
                 {posts.map((post)=>{
-                    return <Post key={post.id} id={post.id} caption={post.body} image={post.image} total_likes={post.total_likes} userId={user.id} username={user.username} avatar={user.avatar} showDeleteBtn={true}
-                    handleDelete={()=>Delete(post.id)} showEditBtn={true} />
+                    return <Post key={post.id}
+                    id={post.id}
+                    caption={post.body}
+                    image={post.image}
+                    total_likes={post.total_likes}
+                    userId={user.id}
+                    username={user.username}
+                    avatar={user.avatar}
+                    showDeleteBtn={true}
+                    handleDelete={()=>Delete(post.id)}
+                    showEditBtn={true} />
                 })}
             </div> }
             </div>
@@ -71,3 +80,4 @@ const Profile = () => {
 }
 
 export default Profile;
+

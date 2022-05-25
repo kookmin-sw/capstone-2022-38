@@ -42,11 +42,10 @@ const UserDetail = () => {
         <div className="community_body">
         <MainContainer>
         <Navbar/>
-        <div className="home_container" id="main__container">
-            
+        <div className="container" id="main__container">
         <div className="row">
         {loading ? <Loader/> :
-        <div className="col-md-4 mx-auto">
+        <div className="col-md-8 mx-auto">
         <ProfileHeader 
         userId={userDetail.id} 
         username={userDetail.username}
@@ -62,7 +61,7 @@ const UserDetail = () => {
         </div>
         <div className="row">
         {loading ? <Loader/> : 
-        <div className="col-md-6 mx-auto">
+        <div className="col-md-8 mx-auto">
         {posts.map((post)=>{
             return <Post key={post.id} id={post.id} caption={post.body} image={post.image} total_likes={post.total_likes} userId={userDetail.id} username={userDetail.username} avatar={userDetail.avatar}  />
         })}
@@ -75,3 +74,6 @@ const UserDetail = () => {
 }
 
 export default UserDetail;
+
+
+

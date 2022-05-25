@@ -4,8 +4,7 @@ import UserLogo from '../../assets/user.png'
 import {followUser,updateUser} from './actions'
 import {useFormik} from 'formik';
 import FormData from 'form-data';
-
-
+import './modal.css';
 import { ContainerGlass } from "../CustomStyle";
 
 const ProfileHeader = (props) => {
@@ -96,31 +95,31 @@ const ProfileHeader = (props) => {
         </div>
       
     {/* update form modal */}
-    <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal fade"  id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true" >
     <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
+    <div className="modal-content glass">
+      <div className="modal-header glass">
         <h5 className="modal-title" id="exampleModalLabel">Edit Profile</h5>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" className="btn-close glass" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div className="modal-body">
+      <div className="modal-body glass">
       <form onSubmit={formik.handleSubmit}>
-      <input className="form-control" 
+      <input className="form-control glass" 
       name="username" placeholder="Username" 
       onChange={formik.handleChange} value={formik.values.username} />
 
-      <input type="email" className="form-control my-2" 
+      <input type="email" className="form-control my-2 glass" 
       name="email" placeholder="Email" 
       onChange={formik.handleChange} value={formik.values.email} />
 
       <input type="text" 
-      className="form-control my-2" name="bio" placeholder="Bio"
+      className="form-control my-2 glass" name="bio" placeholder="Bio"
       onChange={formik.handleChange} value={formik.values.bio} />
 
-      <input type="file" accept="img/*" name="avatar" placeholder="Avatar" 
+      <input type="file" className="glass" accept="img/*" name="avatar" placeholder="Avatar" 
       onChange={handleImageUpload} />
       
-      <button type="submit" className="btn__primary mt-2 d-block">
+      <button type="submit" className="btn__primary mt-2 d-block glass">
       {loading ? "Updating" : "Update"} <i className="fas fa-upload"/>
       </button>
       {updated && "Updated Successfully"}

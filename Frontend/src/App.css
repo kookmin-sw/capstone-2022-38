@@ -42,7 +42,7 @@
 
 section > div {
   background: #f4f8fc;
-}
+} 
 
 nav {
   background: rgba(256,256,256,0.5);
@@ -63,9 +63,16 @@ nav {
 }
 
 .modal-backdrop {
-  z-index: -1;
+  z-index: -10;
 }
 
+#exampleModal {
+  z-index:9999;
+}
+
+.modal-backdrop.show {
+  z-index:1;
+}
 
 
 .container {
@@ -261,6 +268,10 @@ a {
     padding: 1em;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+  }
+
+  .modal-dialog {
+    z-index:10;
   }
   
   @keyframes spin {

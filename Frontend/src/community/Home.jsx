@@ -101,22 +101,7 @@ const Home = () => {
         </div>
     )
 
-    // return(
-    //     <section>
-    //     <Navbar />
-    //     <div className="container" id="main__container">
-    //     <div className="row">
-    //     <div className="col-md-3">
-    //     <Sidebar />
-    //     </div>
-    //     <div className="col-md-6">
-    //     <CreatePost avatar={avatar} />
-    //     <PostList/>
-    //     </div>
-    //     </div>
-    //     </div>
-    //     </section>
-    // )
+   
 }
 
 export default Home;
