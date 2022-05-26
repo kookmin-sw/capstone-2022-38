@@ -50,7 +50,7 @@ const EditPost = () => {
             // if response then it is edited successfully
             if(response) {
                 setUpdating(false);
-                navigate(`/`);
+                navigate(`/home/`);
             } else {
                 alert("Error occoured. Try Again.");
             }
@@ -63,7 +63,7 @@ const EditPost = () => {
         <Navbar/>
         <div className="container" id="main__container">
         <div className="row">
-        <div className="col-md-5 mx-auto">
+        <div className="col-md-8 mx-auto">
         {/* if loading show loading component 
         if setPost is 404 then show restricted msg
         else show edit form

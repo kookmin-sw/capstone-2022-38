@@ -38,29 +38,9 @@ const Navbar = () => {
         <button className="btn btn-sm btn-outline-primary" type="submit" style={{border:"none"}}> <i className="fas fa-search"/> </button>
         </form>
     </div>
-        <div className="toolbar ms-auto">
-            <ul><Link className="dropdown-item" to="/profile">Profile</Link></ul>
-            <ul><Link className="dropdown-item" to="/login">Logout</Link></ul>
-        </div>
-
-    {/* <ul className="ms-auto navbar-nav">
-    <li className="nav-item dropdown">
-    <a className="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <i className="fas fa-ellipsis-h" />
-    </a>
-    {user.data?
-    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    <li><Link className="dropdown-item" to="/profile">Profile</Link></li>
-    <li><Link className="dropdown-item" to="/login">Logout</Link></li>
-    </ul> :
-    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-    <li><Link className="dropdown-item" to="/login">Login</Link></li>
-    <li><Link className="dropdown-item" to="/signup">Signup</Link></li>
-    </ul>
-    }
-    
-    </li>
-    </ul> */}
+        <Link className="navbar-btn" to="/profile">Profile</Link>
+        <Link className="navbar-btn" to="/login">Logout</Link> 
+        <span className="navbar-toggler-icon"></span>
     </div>
     
     </div>
