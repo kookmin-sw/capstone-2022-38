@@ -29,6 +29,11 @@ const CreatePost = (props) => {
         }
     }
 
+    const refreshPage = () => {
+        window.location.reload(false);
+
+    }
+
     // upload post action
     const postData = async () => {
         setLoading(true);
@@ -72,7 +77,7 @@ const CreatePost = (props) => {
         }
 
         <button className="btn__primary" id="post__button" onClick={postData}>
-        {loading ? "Posting" : "Post"} <i className="ms-1"></i> </button>
+        {loading ? refreshPage( ): "Post"} <i className="ms-1"></i> </button>
         </div>
     )
 

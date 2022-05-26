@@ -1,9 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
+
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
+
+import bank from "./Files/bank.pdf";
+import healthcare from "./Files/medical.pdf";
+import transportation from "./Files/transportation.pdf";
+import travel from "./Files/travel.pdf";
+import accomodation from "./Files/accomodation.pdf";
+import basickorean from "./Files/basickorean.pdf";
+import visa from "./Files/visa.pdf";
+
+
+
 
 import web1 from '../../assets/web-2.png';
 import compliant from '../../assets/compliant.png';
@@ -11,15 +26,16 @@ import './downloads.css';
 
 import plate from '../../assets/plate.png';
 import passport from '../../assets/passport.png';
-import bank from '../../assets/bank.png';
-import accomodation from '../../assets/accomodation.png';
+import bank1 from '../../assets/bank.png';
+import accomodation1 from '../../assets/accomodation.png';
 import korean from '../../assets/korean.png';
 import web from '../../assets/web.png'
 import tax from '../../assets/document.png'
-import transportation from '../../assets/vehicles.png';
-import healthcare from '../../assets/healthcare.png';
-import travel from '../../assets/sejong-the-great.png';
+import transportation1 from '../../assets/vehicles.png';
+import healthcare1 from '../../assets/healthcare.png';
+import travel1 from '../../assets/sejong-the-great.png';
 
+ 
 
 const DocSlider = () => {
   const settings = {
@@ -54,8 +70,9 @@ const DocSlider = () => {
                 <div className="doc-image">
                         <img src={passport} alt="blog-image"/>
                         </div>
-
-                    <a href="https://drive.google.com/file/d/1-lRa0x6CzJimZuj8YSqw0M7j94yWacvN/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+                
+                <a href={visa}><div className="back3 small-glass">Download</div></a> 
+                    
                 </div>
                 
                 
@@ -63,10 +80,11 @@ const DocSlider = () => {
                 <h3 className="subtopic small-glass">Bank</h3>
                     
                 <div className="doc-image">
-                        <img src={bank} alt="blog-image"/>
+                        <img src={bank1} alt="blog-image"/>
                         </div>
-
-                    <a href="https://drive.google.com/file/d/1txLxJvJR5hp7mppGPs-zQVtcUhn6seem/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+      
+                    <a href={bank}><div className="back3 small-glass">Download</div></a> 
+                   
                 </div>
                 
                 
@@ -74,12 +92,10 @@ const DocSlider = () => {
                 <h3 className="subtopic small-glass">Accomodation</h3>
                     
                 <div className="doc-image">
-                        <img src={accomodation} alt="blog-image"/>
+                        <img src={accomodation1} alt="blog-image"/>
                         </div>
-
-
-                        
-                <a href="https://drive.google.com/file/d/1kt3FXu2y1WrIscpKRYzsSpGkKtJWfeHA/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+                
+                        <a href={accomodation}><div className="back3 small-glass">Download</div></a> 
                 </div>
                 
                 
@@ -91,9 +107,9 @@ const DocSlider = () => {
                         </div>
 
 
+                <a href={basickorean}><div className="back3 small-glass">Download</div></a> 
 
-
-                <a href="https://www.korean.go.kr/attachFile/edu/forein03.pdf"><div className="back3 small-glass">Download</div></a>
+            
                 </div>
                 
                 
@@ -147,10 +163,13 @@ const DocSlider = () => {
                 <h3 className="subtopic small-glass">Transportation</h3>
                     
                 <div className="doc-image">
-                        <img src={transportation} alt="blog-image"/>
+                        <img src={transportation1} alt="blog-image"/>
                         </div>
 
-                <a href="https://drive.google.com/file/d/12JDzbyDwNcTaejYtyijI1cLPODc_cXIj/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+
+                        <a href={transportation}><div className="back3 small-glass">Download</div></a> 
+
+           
                 </div>
 
 
@@ -159,10 +178,13 @@ const DocSlider = () => {
                 <h3 className="subtopic small-glass">Healthcare</h3>
                     
                 <div className="doc-image">
-                        <img src={healthcare} alt="blog-image"/>
+                        <img src={healthcare1} alt="blog-image"/>
                         </div>
 
-                <a href="https://drive.google.com/file/d/1Xq0hWldyMqoMU_puNkcZnCE61vJu-YuY/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+
+                        <a href={healthcare}><div className="back3 small-glass">Download</div></a> 
+
+            
                 </div>
 
 
@@ -170,10 +192,10 @@ const DocSlider = () => {
                 <h3 className="subtopic small-glass">Travel</h3>
                     
                 <div className="doc-image">
-                        <img src={travel} alt="blog-image"/>
+                        <img src={travel1} alt="blog-image"/>
                         </div>
 
-                <a href="https://drive.google.com/file/d/1ZQtL4E1sHmRSR1A7lbQsYlmshfWu7A2q/view?usp=sharing"><div className="back3 small-glass">Download</div></a>
+                        <a href={travel}><div className="back3 small-glass">Download</div></a> 
                 </div>
 
            

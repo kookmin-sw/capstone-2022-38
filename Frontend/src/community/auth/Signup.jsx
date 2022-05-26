@@ -6,6 +6,9 @@ import {signupUser} from './actions';
 import styled from "styled-components";
 import { MainContainer, ButtonContainer } from '../CustomStyle';
 
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
+
 const Signup = () => {
     const [err,setErr] = useState(false);
     const [loading,setLoading] = useState(false);
@@ -19,6 +22,24 @@ const Signup = () => {
         },
 
        onSubmit: async (values) =>{
+        if (values.password1 !== values.password2) {
+          toast.error("please check the password");
+        }
+  
+        if (err) {
+          if (values.password1.length < 8 || values.password2.length < 8) {
+            toast.error("Please put a Password longer than 8 characters!", {
+              theme: "colored",
+            });
+          }
+          else if (values.password1 !== values.password2) {
+            toast.error("Please check the password", {
+              theme: "colored",
+            });
+          } else {
+            toast.error("Already existant username or mail");
+          }
+        }
          setLoading(true);
           let newUser = await signupUser(values);
           if(newUser) {
@@ -33,6 +54,8 @@ const Signup = () => {
     return (
       <div className="community_body">
         <MainContainer onSubmit={formik.handleSubmit}>
+        <ToastContainer/>
+
         <WelcomeText>Reachaliens Community</WelcomeText>
         <SecondText>
           Welcome to Reachaliens Community. Here, you can connect and share with
@@ -71,9 +94,9 @@ const Signup = () => {
             value={formik.values.password2}
           />
         </InputContainer>
-        {err && <p className="text-danger">Error Occoured. Try Again</p>}
+        {/* {err && <p className="text-danger">Error Occoured. Try Again</p>} */}
         <ButtonContainer>Sign up</ButtonContainer> 
-        <ButtonContainer onClick={event =>window.location.href='/login'}>Login</ButtonContainer> 
+        
         </form>
         <Link to={"/login/"} > Already have an account? Login </Link>
       </MainContainer>

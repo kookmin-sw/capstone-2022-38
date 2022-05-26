@@ -61,7 +61,7 @@ const Search = () => {
         <div className="community_body">
         <MainContainer>
         <Navbar/>
-        <div className="home_container" id="main__container">
+        <div className="container" id="main__container">
         { /*query && <p style={{fontFamily:"Roboto",textAlign:"center",margin:"0.1em 0"}}>
         Showing Results for:  
     </p>*/}

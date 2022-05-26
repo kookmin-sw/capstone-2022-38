@@ -16,7 +16,7 @@ const Logout = ()=> {
 
         <MainContainer>
         <Navbar/>
-        <div className="home_container" id="main__container">
+        <div className="container" id="main__container">
         <div className="row">
         <div className="col-md-4 mx-auto" style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:'center'}}>
         <h4 style={{fontFamily:"Roboto",textAlign:"center"}}>
