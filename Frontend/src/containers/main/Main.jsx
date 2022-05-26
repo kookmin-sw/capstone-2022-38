@@ -29,12 +29,12 @@ const Main = () => {
                   </div>
                 </div>
                 
-                <div className="text_container">
+                <div className="text_container ">
                   
-                  <div className="scholarship_name glass">
+                  <div className="scholarship_name glass ">
                     <h2>Global Korea Scholarship</h2>
                   </div>
-                   <div className="scholarship_name glass">
+                   <div className="scholarship_name glass ">
                      <h2>South Korea</h2>
                    </div>
                    

@@ -33,17 +33,17 @@ export default class DisplayTable extends React.Component {
         <Slider {...settings}>
           {parks.map((Val) => {
             return (
-              <div className="card-container" key={Val.id}>
-                <div className="dest-image">
+              <div className="card-container small-glass" key={Val.id}>
+                <div className="dest-image ">
                   <img  src={Val.Image} alt={Val.Name}/>
                 </div>
 
                 <div className="dest-content">
-                  <div className="dest-name">
+                  <div className="dest-name ">
                     {Val.Name} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                   
-                  <div className="dest-address">{Val.desc}</div>
+                  <div className="dest-address ">{Val.Location}</div>
                 </div>
 
               </div>

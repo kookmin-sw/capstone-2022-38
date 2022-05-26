@@ -4,6 +4,8 @@ import character from "../../assets/character.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 
+
+
 const options1 = [
   { value: "scholarship", label: "Scholarship" },
   { value: "internship", label: "Internship" },
