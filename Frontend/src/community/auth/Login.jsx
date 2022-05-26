@@ -50,7 +50,6 @@ const Login = () => {
       <MainContainer onSubmit={formik.handleSubmit}>
         <WelcomeText>Reachaliens Community</WelcomeText>
         <ToastContainer />
-
         <SecondText>
           Welcome to Reachaliens Community. Here, you can connect and share with
           other aliens.

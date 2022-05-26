@@ -31,13 +31,9 @@ function App() {
     <UserProvider>
     <Routes>
     <Route path="/" element={<Main_Home />} />
-    
-   
 
-    
     <Route path="/main" element={<Main />} />
     <Route path="/about" element={<About />} />
-
 
     <Route element={<ProtectedRoute/>}>
     <Route path="/home" element={<Home />} />

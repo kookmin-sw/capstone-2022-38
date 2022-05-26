@@ -8,7 +8,6 @@ import "./about.css";
 const About = () => (
     <div className="about">
         <div className="page">
-    
         <Introduction />
         <Video />
         </div>

@@ -43,7 +43,9 @@ const CreatePost = (props) => {
         let newPost = await createPost(payload);
         if(newPost) {
             setLoading(false);
-            navigate('/')
+            navigate('/home')
+            refreshPage();
+
         } else {
             setLoading(false)
         }
@@ -77,7 +79,7 @@ const CreatePost = (props) => {
         }
 
         <button className="btn__primary" id="post__button" onClick={postData}>
-        {loading ? refreshPage( ): "Post"} <i className="ms-1"></i> </button>
+        {loading ? "Posting": "Post"} <i className="ms-1"></i> </button>
         </div>
     )
 
