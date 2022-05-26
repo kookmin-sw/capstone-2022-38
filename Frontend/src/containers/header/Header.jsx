@@ -37,7 +37,7 @@ const Header = () => {
         <div className="mainpage_container">
           <header>
             <a href="#" className="logo">
-              Logo
+              Reachaliens
             </a>
             <ul>
               <li>

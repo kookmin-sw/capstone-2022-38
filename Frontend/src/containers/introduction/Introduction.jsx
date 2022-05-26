@@ -1,13 +1,11 @@
 import styled from "styled-components";
-
-import Button from '../../components/button/Button';
+import { Link } from "react-router-dom";
 
 function Introduction() {
   return (
     <IntroContainer>
-
       <ButtonContainer>
-        <Button content="Home"  />
+      <Link to="/" className="about-homebtn">Home</Link>
       </ButtonContainer>
       <WelcomeText>
         <br></br>What is Reachaliens?
@@ -33,7 +31,6 @@ function Introduction() {
 const IntroContainer = styled.div`
   display: flex;
   margin-bottom: -200px;
-  align-items: center;
   flex-direction: column;
   height: 90vh;
   min-width: 62vw;
@@ -87,10 +84,20 @@ const IntroContainer = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  display: flex;
-  align-items: right;
-  width: 100%;
-  justify-content: right;
+  background: #0F52BA;
+  cursor:pointer;
+  border-radius:30px;
+  border:none;
+  padding:0em 2em;
+  color:white;
+  box-shadow: 2px 2px 5px rgba(169, 169, 169, 0.25);
+  padding:0.5em 2em;
+  display:inline-block;
+  float:right;
+  width:120px;
+  text-align:right;
+  justify-content:right;
+  }
 `;
 
 const WelcomeText = styled.h1`
