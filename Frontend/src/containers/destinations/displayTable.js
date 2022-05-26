@@ -33,18 +33,17 @@ export default class DisplayTable extends React.Component {
         <Slider {...settings}>
           {parks.map((Val) => {
             return (
-              <div className="restcont" key={Val.id}>
-                <div className="restaurant-image">
-                  <img id = "img" src={Val.Image}/>
+              <div className="card-container" key={Val.id}>
+                <div className="dest-image">
+                  <img  src={Val.Image} alt={Val.Name}/>
                 </div>
 
-                <div className="restaurant-content">
-                  <div className="restaurant-name">
-                    {Val.Name} 
-                    {/* {Val.Location} */}
-                    {/* {Val.title} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
+                <div className="dest-content">
+                  <div className="dest-name">
+                    {Val.Name} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
-                  <div className="restaurant-address">{Val.desc}</div>
+                  
+                  <div className="dest-address">{Val.desc}</div>
                 </div>
 
               </div>
@@ -62,35 +61,6 @@ export default class DisplayTable extends React.Component {
 };
 
 
-//     const parks = this.props.displayedParks;
-//     console.log(parks);
-
-//     const list = parks.map((park) => {
-//       return (     
-//         <div className="restaurantitem-container ">
-//             <Slider {...settings}>
-//               <div className="container-fluid">
-//                 <div className="map-image">
-//                   <img id = "img" src={park.Image} />
-//                   <h3>{park.Name} - {park.Location}</h3>
-
-
-//                   {/* <p>{park.Description}</p>
-//           <p> Established in: {park.Established} </p>
-//           <p> Land Area: {park.Area} </p>
-//           <p> Annual Visitors: {park["Recreation visitors"]}</p> */}
-
-//                 </div>
-//               </div>
-//             </Slider>
-          
-//             </div>
-         
-//       );
-//     });
-//     console.log(list);
-//     return <div className="DataContainer map-glass"> {list} </div>;
-//   };
 
   render() {
   

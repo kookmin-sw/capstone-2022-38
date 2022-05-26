@@ -1,14 +1,14 @@
 import React from "react";
-import USA from "@svg-maps/south-korea";
+import SouthKorea from "@svg-maps/south-korea";
 import { CheckboxSVGMap } from "react-svg-map";
 import "react-svg-map/lib/index.css";
 
 import parks from "./korea.json";
 import { getLocationName } from './utility';
-import DisplayTable from "./displayTable.js";
+
 import "./styles.css";
 
-class USAMap extends React.Component {
+class SouthKoreaMap extends React.Component {
   constructor(props) {
     super(props);
 
@@ -57,7 +57,7 @@ class USAMap extends React.Component {
   render() {
     return (
       <div>
-					<div className="examples__block__info__item">
+					<div className="examples__block__info__item glass">
 						Pointed location: {this.state.pointedLocation}
 					</div>
 
@@ -65,7 +65,7 @@ class USAMap extends React.Component {
           <CheckboxSVGMap 
             height="200%"
             overflow="auto"
-            map={USA}
+            map={SouthKorea}
             onChange={this.handleOnChange}
             onLocationMouseOver={this.handleLocationMouseOver}
           />
@@ -77,4 +77,4 @@ class USAMap extends React.Component {
   }
 }
 
-export default USAMap;
+export default SouthKoreaMap;

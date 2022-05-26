@@ -1,70 +1,13 @@
-.foodsearch {
-  display: flex;
-  flex-direction: column;
-}
-
-.foodsearch-heading {
-  width: 100%;
-  text-align: left;
-  
-}
-
-.foodsearch-heading h1 {
-  font-size: 62px;
-  line-height: 75px;
-  font-family: var(--font-family);
-  font-weight: 800;
-}
-
-.button-wrapper {
-  display: inline-block;
-  margin-bottom: 1em;
-}
-
-.filter-button  {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-family: var(--font-family);
-  font-weight: 600;
-  background: rgb(255, 255, 255, 0.3);
-  color: black;
-  border-radius: 15px;
-  padding: 5px 15px;
-  border-style: none;
-  margin-left: 0.5em;
-  float:right;
-}
-
-.filter-button:hover {
-  background: white;
-  transition: 0.5s;
-}
-.filter-button:focus {
-  background: white;
-  box-shadow: 5px 5px 8px rgba(133, 133, 133, 0.1);
-}
-
-/* .food-glass {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-} */
-
 .foodsearch-wrapper {
   display: flex;
   flex-direction: row;
   position: relative;
-  
   
 }
 
 .foodtype-container {
   margin-right: 2rem;
   border-radius: 25px;
-  background: green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +71,62 @@
   margin-top:1em;
 }
 
+.foodsearch {
+  display: flex;
+  flex-direction: column;
+}
+
+.foodsearch-heading {
+  width: 100%;
+  text-align: left;
+  
+}
+
+.foodsearch-heading h1 {
+  font-size: 62px;
+  line-height: 75px;
+  font-family: var(--font-family);
+  font-weight: 800;
+}
+
+.button-wrapper {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.filter-button  {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  background: rgb(255, 255, 255, 0.3);
+  color: black;
+  border-radius: 15px;
+  padding: 5px 15px;
+  border-style: none;
+  margin-left: 0.5em;
+  float:right;
+}
+
+.filter-button:hover {
+  background: white;
+  transition: 0.5s;
+}
+.filter-button:focus {
+  background: white;
+  box-shadow: 5px 5px 8px rgba(133, 133, 133, 0.1);
+}
+
+/* .food-glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+} */
+
+
 .slick-track {
   display: flex !important;
 }
@@ -171,10 +170,7 @@
     width: 100%;
   }
 
-  .gpt3__blog-heading h1 {
-    font-size: 46px;
-    line-height: 52px;
-  }
+  
 }
 
 @media screen and (max-width: 550px) {

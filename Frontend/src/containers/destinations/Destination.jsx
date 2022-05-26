@@ -1,18 +1,14 @@
 import React from 'react';
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./destination.css"
 import DisplayTable from "./displayTable.js";
-import USAMap from "./map.js";
-
-import DisplayItems from "./displayTable";
+import SouthKoreaMap from "./map.js";
 
 
 
 
-// const Destination = () => (
+
+
+
 
 export default class Destination extends React.Component {
     constructor(props) {
@@ -42,29 +38,31 @@ export default class Destination extends React.Component {
           <h4>Click on the map to know</h4>
         </div>
 
+        </div>
+
+
         <div className="both-wrapper">
-        <div className="map-wrapper ">  
-            <div className="map-image map-glass">
-              <USAMap callBackParent={this.sendParks} />
+
+
+        <div className="map-wrapper">  
+            <div className="map-image">
+              <SouthKoreaMap callBackParent={this.sendParks} />
             </div>
         </div>
         
        
        
        
-        <div className="content-wrapper  ">
-        {/* <div className="object-wrapper "> */}
-        
-
-          <div className="row">
-          {/* <DisplayItems displayedParks={this.state.selectedStates}/> */}
+         <div className="content-wrapper">    
+            <div className="row">
+          
             <DisplayTable displayedParks={this.state.selectedStates} /> 
           </div>
         </div>
-       
-       
-        </div>
+        
       </div>
+
+
     </div>
     
     
