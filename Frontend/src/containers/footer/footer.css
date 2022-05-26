@@ -3,14 +3,18 @@
     flex-direction: column;
 }
 
-.gpt3__footer-heading h1 {
+#footer-glass {
+        padding: 2rem 6rem 1rem 6rem;
+}
+
+.footer-heading h1 {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 64px;
     line-height: 75px;
 }
 
-.gpt3__footer-btn {
+.footer-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +27,7 @@
     cursor: pointer;
 }
 
-.gpt3__footer-btn p {
+.footer-btn p {
     font-size: 18px;
     font-family: var(--font-family);
     line-height: 21px;
@@ -31,57 +35,38 @@
     word-spacing: 2px;
 }
 
-.gpt3__footer-links {
+.footer-links {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
 
     width: 100%;
-    text-align: left;
 }
 
-.gpt3__footer-links div {
-    width: 250px;
-    margin: 1rem;
-}
-
-.gpt3__footer-links_logo {
+.footer-links_logo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom:1rem;
 }
 
-.gpt3__footer-links_logo img {
+.footer-links_logo img {
     width: 118px;
     height: 30px;
-
-    margin-bottom: 1rem;
 }
 
-.gpt3__footer-links_logo p {
+.footer-links_logo p {
     font-family: var(--font-family);
     font-size: 12px;
     line-height: 15px;
     color: #000;
 }
 
-.gpt3__footer-links_div {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.gpt3__footer-links_div h4 {
-    font-size: 14px;
-    line-height: 17px;
-    font-family: var(--font-family);
-    color: #000;
-
-    margin-bottom: 0.9rem;
-}
-
-.gpt3__footer-links_div p {
+.footer-links_logo a {
     font-size: 12px;
     line-height: 15px;
     font-family: var(--font-family);
@@ -89,14 +74,44 @@
 
     margin: 0.5rem 0;
     cursor: pointer;
+    margin-left:2rem;
 }
 
-.gpt3__footer-links_div p:hover {
+.footer-links_logo a:hover {
     color:#9a9a9a;
     transition:0.5s;
 }
 
-.gpt3__footer-copyright {
+.button-wrapper {
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.sns-button {
+    display:inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255, 0.3);
+    cursor:pointer;
+}
+
+.sns-button:hover {
+    background: white;
+    transition: 0.5s;
+  }
+
+.footer-links p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: var(--font-family);
+    color: #000;
+    cursor: pointer;
+    display:block;
+}
+
+/*
+.footer-copyright {
     margin-top: 2rem;
     text-align: center;
     width: 100%;
@@ -108,32 +123,33 @@
     line-height: 15px;
     color: #000;
 }
+*/
 
 @media screen and (max-width: 850px) {
-    .gpt3__footer-heading h1 {
+    .footer-heading h1 {
         font-size: 44px;
         line-height: 50px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__footer-heading h1 {
+    .footer-heading h1 {
         font-size: 34px;
         line-height: 42px;
     }
 
-    .gpt3__footer-links div {
+    .footer-links div {
         margin: 1rem 0;
     }
 
-    .gpt3__footer-btn p {
+    .footer-btn p {
         font-size: 14px;
         line-height: 20px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .gpt3__footer-heading h1 {
+    .footer-heading h1 {
         font-size: 27px;
         line-height: 38px;
     }

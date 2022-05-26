@@ -76,7 +76,10 @@ const Login = () => {
             />
           </InputContainer>
           <ButtonContainer>
-            <StyledButton>Log in</StyledButton>
+            <StyledButton>
+          <Link to={"/home/"}> Login </Link>
+          </StyledButton>
+            {/* <StyledButton>Log in</StyledButton> */}
           </ButtonContainer>
           <Link to={"/signup/"}> Don't have an account yet? Sign up→ </Link>
           <HorizontalRule />
