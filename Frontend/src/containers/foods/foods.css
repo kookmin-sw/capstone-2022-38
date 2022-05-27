@@ -6,20 +6,35 @@
 }
 
 .foodtype-container {
+  display:inline-block;
   margin-right: 2rem;
   border-radius: 25px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: left;
   width: 35%;
+
+  margin-top:4em;
+  background: rgba(256,256,256,0.5);
+  border-radius:20px;
+  border-style:solid;
+  border-width:0.5px;
+  border-color:rgba(230,230,230,0.7);
+  box-shadow:3px 3px 4px rgba(195,195,195,0.1);
+  padding:1.5em;
+  
+  position:relative;
 }
 
 .foodtype-container h1 {
-  font-size: 62px;
-  line-height: 75px;
-  font-family: var(--font-family);
-  font-weight: 800;
-  text-align: center;
+  font-size: 1.8vw;
+  font-family: "Convergence";
+  font-weight: 700;
+  text-align: left;
+
+  position: absolute;
+  bottom: 0.5em;
+  margin: 0;
 }
 
 .restaurantitem-container {
@@ -83,7 +98,7 @@
 }
 
 .foodsearch-heading h1 {
-  font-size: 62px;
+  font-size: 4.5vw;
   line-height: 75px;
   font-family: var(--font-family);
   font-weight: 800;
@@ -143,42 +158,11 @@
   margin: 0 -10px;
 }
 
-@media screen and (max-width: 990px) {
-  .foodsearch-wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .foodtype-container {
-    margin: 2rem 0;
-  }
-
-  .foodtype-container  {
-    width: 48%;
-  }
-
-  .foodtype-container  {
-    height: 250px;
-  }
+  .restaurant-content h3 {
+    font-size: 18px;
+    line-height: 25px;
 }
 
-@media screen and (max-width: 700px) {
-  .restaurantitem-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .foodtype-container .gpt3__blog-container_article {
-    width: 100%;
-  }
-
-  
-}
-
-@media screen and (max-width: 550px) {
-  .gpt3__blog-heading h1 {
-    font-size: 34px;
-    line-height: 42px;
-  }
-}
 
 .filter-container {
   display: grid;
@@ -235,13 +219,6 @@
   object-fit:over;
 }
 
-@media screen and (max-width: 550px) {
-   .restaurant-content h3 {
-      font-size: 18px;
-      line-height: 25px;
- }
-}
-
 .card-container {
   margin-top:1em;
   background: rgba(256,256,256,0.5);
@@ -250,4 +227,53 @@
   border-width:0.5px;
   border-color:rgba(230,230,230,0.7);
   box-shadow:3px 3px 4px rgba(195,195,195,0.1);
+}
+
+@media screen and (max-width: 990px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+
+  .foodsearch-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .foodtype-container {
+    display:none;
+  }
+
+  .restaurantitem-container {
+    width: 100%;    
+  }  
+}
+
+@media screen and (max-width: 750px) {
+  .button-wrapper {
+    display:flex;
+      flex-direction:column;
+      text-align:center;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .filter-button {
+  background: rgb(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 5px 15px;
+  border-style: none;
+  margin-left: 0.5em;
+  margin-bottom:0.5em;
+  float:none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gpt3__blog-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }

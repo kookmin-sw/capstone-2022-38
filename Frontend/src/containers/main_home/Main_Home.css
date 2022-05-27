@@ -1,93 +1,114 @@
-  a {
-    color: unset;
-    text-decoration: none;
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+
+.background-img {
+  
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  margin: 30px 80px 30px 80px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.input-data {
+  background:rgba(157, 157, 157, 0.2);
+  border:none;
+  border-radius:15px;
+}
+
+.modal-content {
+  background: rgba(256,256,256,0.5);
+  border-radius:15px;
+  border-style:solid;
+  border-width:0.5px;
+  border-color:rgba(230,230,230,0.7);
+  box-shadow:3px 3px 4px rgba(195,195,195,0.1);
+  padding: 1em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.modal-backdrop {
+  z-index:-1;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
-  
-  
-  .background-img {
-    
-    background: url(background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100%;
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  
-  .gradient__text {
-    background: var(--gradient-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
-  
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
   .section__padding {
-    padding: 4rem 6rem;
+    padding: 4rem;
   }
-  
+
   .section__margin {
-    margin: 4rem 6rem;
+    margin: 4rem;
   }
-  
-  .scale-up-center {
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  }
-  
-  .glass {
-    background: rgba(255, 255, 255, 0.25);
-    margin: 30px 80px 30px 80px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-  }
-  
-  @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    .section__padding {
-      padding: 4rem;
-    }
-  
-    .section__margin {
-      margin: 4rem;
-    }
-  }
-  
-  @media screen and (max-width: 550px) {
-    .section__padding {
-      padding: 4rem 2rem;
-    }
-  
-    .section__margin {
-      margin: 4rem 2rem;
-    }  
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
   }
 
+  .section__margin {
+    margin: 4rem 2rem;
+  }  
+}
 
- 
+
+
 

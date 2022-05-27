@@ -53,6 +53,11 @@ nav {
   margin:1em 0;
 }
 
+.navbar {
+  width:65%;
+  justify-content: space-around;
+}
+
 .navbar-btn {
   font-size: 15px;
   font-family: var(--font-family);
@@ -63,7 +68,7 @@ nav {
   border-color:rgba(230,230,230,0.7);
   padding: 5px 15px;
   border-style: none;
-  margin-left:0.5em;
+  margin-left:0.8em;
 }
 
 .navbar-btn:hover {
@@ -72,23 +77,11 @@ nav {
   transition: 0.5s;
 }
 
+
 .toolbar {
   display:flex;
   flex-direction: row;
   text-decoration: none;
-}
-
-.modal-backdrop {
-  display: none;
-  
-}
-
-#exampleModal {
-  z-index:9999;
-}
-
-.modal-backdrop.show {
-  z-index:1;
 }
 
 
@@ -256,6 +249,7 @@ a {
     cursor: pointer;
     color: rgb(187, 184, 184);
   }
+
   .loader {
     border: 0.3em solid #f3f3f3; /* Light grey */
     border-top: 0.3em solid #445ef3; /* Blue */
@@ -270,23 +264,6 @@ a {
   }
 
 
-
-  .modal-content {
-    background: rgba(256,256,256,0.5);
-    border-radius:15px;
-    border-style:solid;
-    border-width:0.5px;
-    border-color:rgba(230,230,230,0.7);
-    box-shadow:3px 3px 4px rgba(195,195,195,0.1);
-    padding: 1em;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-  }
-
-  .modal-dialog {
-    z-index:10;
-  }
-  
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -307,7 +284,11 @@ a {
     box-shadow:3px 3px 4px rgba(195,195,195,0.1);
   }
 
-
+  @media screen and (max-width: 767px) {
+   .navbar {
+     width:95%;
+   }
+  }
 
 
 

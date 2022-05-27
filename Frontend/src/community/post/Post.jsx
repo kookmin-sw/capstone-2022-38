@@ -39,7 +39,7 @@ const Post = (props) => {
             <a className="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i className="fas fa-ellipsis-h text-muted"/>
             </a>
-                {user.data.user.id == props.userId ?
+                {user.data.user.id === props.userId ?
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><Link className="dropdown-item" to={"/post/edit/"+props.id}>Edit</Link></li>
                 {/* show delete btn if showDeleteBtn is true and call deletePost when clickd */}

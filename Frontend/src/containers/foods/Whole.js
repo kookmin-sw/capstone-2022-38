@@ -26,8 +26,9 @@ const Whole = () => {
     <div className="foodsearch-wrapper">
 
       
-        <div className="foodtype-container small-glass">
-          <h1 className="gradient__text" id="chgtext">Diet Food</h1>
+        <div className="foodtype-container">
+          <i className="fas fa-arrow-right float-end" />
+          <h1 id="chgtext">Have specific food preferences? We'll help you find them</h1>
         </div>
 
       <div className="restaurantitem-container">

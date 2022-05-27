@@ -7,7 +7,7 @@ import './main.css';
 
 const Main = () => {
   return (
-    <div className="gradient__bg">
+    
     
       <section>
         <div className="container_main">
@@ -167,7 +167,7 @@ const Main = () => {
 
           </div>
       </section>
-    </div>
+    
   );
 };
 

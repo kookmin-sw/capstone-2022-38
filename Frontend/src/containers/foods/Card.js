@@ -4,19 +4,35 @@ import "./foods.css";
 import Slider from "react-slick";
 
 const Card = ({ item }) => {
-  const settings = {
+  let customSettings = {
+    // dots: false,
+    // infinite: true,
+    // speed: 500,
+    // rows: 2,
+    // slidesToShow: 3,
+    // slidesToScroll: 3
     dots: false,
     infinite: true,
     speed: 500,
-    rows: 2,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    rows: 2,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          rows:2
+        }
+      }
+    ]
 };
   
   return (
     <>
         <div className="restaurantitem-container">
-        <Slider {...settings}>
+        <Slider {...customSettings}>
           {item.map((Val) => {
             return (
               <div className="card-container " key={Val.id}>

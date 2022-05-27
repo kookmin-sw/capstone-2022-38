@@ -104,7 +104,7 @@ section
 	font-family: var(--font-family);
 	font-style: normal;
 	font-weight: 500;
-	font-size: 26px;
+	font-size: 3vw;
 	line-height: 32px;
 	cursor: default;
 }
@@ -165,7 +165,7 @@ section
 	color: #0a0909;
 	margin-top: 270px;
 	border-radius: 30px;
-	font-size: 1.2em;
+	font-size: 1.3vw;
 	font-weight: 500;
 	text-decoration: none;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -227,28 +227,64 @@ section
   }
   
   @media screen and (max-width: 700px) {
-	.section__padding {
+	.container_main {
 	  padding: 4rem;
 	}
   
-	.section__margin {
+	.container_main {
 	  margin: 4rem;
 	}
   }
   
   @media screen and (max-width: 550px) {
-	.section__padding {
+	.container_main {
 	  padding: 4rem 2rem;
 	}
   
-	.section__margin {
+	.container_main {
 	  margin: 4rem 2rem;
 	}  
   }
  
+  @media screen and (max-width: 700px) {
+	.active_tab {
+	  padding: 4rem;
+	}
+  
+	.active_tab {
+	  margin: 4rem;
+	}
+  }
+  
+  @media screen and (max-width: 550px) {
+	.active_tab {
+	  padding: 4rem 2rem;
+	}
+  
+	.active_tab {
+	  margin: 4rem 2rem;
+	}  
+  }
 
-
-
+  @media screen and (max-width: 700px) {
+	.tab_pane_image, .imgBx, .glass {
+	  padding: 4rem;
+	}
+  
+	.tab_pane_image, .imgBx, .glass {
+	  margin: 4rem;
+	}
+  }
+  
+  @media screen and (max-width: 550px) {
+	.tab_pane_image, .imgBx, .glass {
+	  padding: 4rem;
+	}
+  
+	.tab_pane_image, .imgBx, .glass {
+	  margin: 4rem;
+	}
+  }
 
 
 

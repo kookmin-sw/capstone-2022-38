@@ -59,10 +59,10 @@ header
 }
 header .logo
 {
-	color: #8a2435;
+	color: #1f6c7d;
 	font-weight: 700;
 	text-decoration: none;
-	font-size: 2em;
+	font-size: 2vw;
 }
 header ul
 {
@@ -102,7 +102,7 @@ header ul li a:hover
 .mainpage_container .content h2
 {
 	flex-direction: row;
-	font-size: 5em;
+	font-size: 5vw;
 	font-family: var(--font-family);
     font-weight: 700;
     line-height: 80px;
@@ -127,10 +127,10 @@ header ul li a:hover
 	display: flex;
 	padding: 15px 30px;
 	background: #fff;
-	color: #8a2435;
+	color: #6b248a;
 	margin-top: 20px;
 	border-radius: 30px;
-	font-size: 1.2em;
+	font-size: 1.5vw;
 	font-weight: 500;
 	text-decoration: none;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
